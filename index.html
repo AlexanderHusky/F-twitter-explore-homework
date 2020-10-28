@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="zh-Hans">
 <head>
+  <link rel="stylesheet" type="text/css" href="src/style/app.css">
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,7 +9,22 @@
   <title>Title</title>
 </head>
 <body>
-  Hello World
+  <header class="nav">
+    <div class="nav-logo">Twitter</div>
+    <button class="nav-login">登陆</button>
+    <button class="nav-register">注册</button>
+  </header>
+  <main class="main">
+    <div class="section">
+      <div class="section-title">查看世界上正在发生的事情</div>
+      <input type="text" placeholder="电话，邮件地址或者用户名">
+      <input type="text" placeholder="密码">
+      <a href="">忘记密码</a>
+      <button class="section-login">登陆</button>
+      <p>或</p>
+      <button class="section-register">注册</button>
+    </div>
+  </main>
   <script src="src/app.js"></script>
 </body>
 </html>
