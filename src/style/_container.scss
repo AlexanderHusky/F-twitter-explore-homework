@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+%button {
+  border-radius: 20px;
+  background-color: lightskyblue;
+  text-align: center;
+}
+.header-function-btn {
+  @extend %button;
+}
+.section-btn {
+  @extend %button;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px $color-base;
+  height: 100%;
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  margin-top: 150px;
+
+  .section-title {
+    @include heading(28px);
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  & > input {
+    height: 60px;
+    background-color: transparent;
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid $color-base;
+    outline: none;
+    margin-bottom: 15px;
+  }
+
+  a {
+    margin-bottom: 15px;
+  }
+}
